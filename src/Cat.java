@@ -27,6 +27,9 @@ public class Cat {
 		
 		g2.setColor(Color.black);
 		g2.fillRect(-1000, -1000, 100000, 100000);
+		g2.setColor(Color.pink);
+		g2.fillArc(100, -100, 200, 200, 270, -30);
+		g2.fillArc(5, -100, 200, 200, 270, 30);
 		int x=catX;
 		int y=catY;
 		// Draw the head
@@ -44,9 +47,9 @@ public class Cat {
 		x = catX + MOUTH_X;
 		y = catY + MOUTH_Y;
 		g2.fillOval(x, y, MOUTH_WIDTH, MOUTH_HEIGHT);
-		g2.setColor(Color.pink);
-		g2.fillArc(100, -100, 200, 200, 270, -30);
-		g2.fillArc(5, -100, 200, 200, 270, 30);
+		g2.setColor(Color.cyan);
+		g2.fillOval(150, 150, 30, 20);
+		
 		
 		g2.setColor(Color.black);
 		// Meow text appears below cat head, +10 places below 
