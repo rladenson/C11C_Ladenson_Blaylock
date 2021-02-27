@@ -24,6 +24,9 @@ public class Cat {
 	public void draw(Graphics g, int catX, int catY)
 	{
 		Graphics2D g2 = (Graphics2D) g;
+		
+		g2.setColor(Color.black);
+		g2.fillRect(-1000, -1000, 100000, 100000);
 		int x=catX;
 		int y=catY;
 		// Draw the head
@@ -41,6 +44,11 @@ public class Cat {
 		x = catX + MOUTH_X;
 		y = catY + MOUTH_Y;
 		g2.fillOval(x, y, MOUTH_WIDTH, MOUTH_HEIGHT);
+		
+		g2.setColor(Color.yellow);
+		g2.fillArc(100, -100, 200, 200, 270, -30);
+		g2.fillArc(5, -100, 200, 200, 270, 30);
+		
 		g2.setColor(Color.black);
 		// Meow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
